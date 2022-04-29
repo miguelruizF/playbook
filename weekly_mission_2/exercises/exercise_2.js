@@ -60,6 +60,7 @@ const explorers = [{
     }
 ]
 
+//METODO FOREACH
 // explorers.forEach(ele => {
 //     console.log(ele.name);
 // });
@@ -68,7 +69,36 @@ const explorers = [{
 //     console.log(ele.stack);
 // });
 
-const newArr = explorers.map(el => {
-    return el.stack;
+//METODO MAP
+// const newArr = explorers.map(el => {
+//     return el.stack;
+// })
+// console.log(newArr);
+
+//METODO FILTER
+// const stackFilter = explorers.filter(el => {
+//     return el.stack.includes('js');
+// })
+// console.log(stackFilter);
+
+//METODO FIND
+// const explorerCdmx = explorers.find(el => {
+//     return el.city == "CDMX";
+// })
+// console.log(explorerCdmx);
+
+//METODO REDUCE
+// const explorerReduce = explorers.reduce((ac, el) => ac + el.exercises_completed, 0)
+// console.log(explorerReduce);
+
+//METODO SOME
+// const validation = explorers.some(el => {
+//     return el.missions.frontend.exercisesFinished === true;
+// });
+// console.log(validation);
+
+//METODO EVERY
+const validationEvery = explorers.every(el => {
+    return el.missions.onboarding.isFinished == true;
 })
-console.log(newArr);
+console.log(validationEvery);
